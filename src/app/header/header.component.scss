@@ -1,0 +1,32 @@
+body{
+    background-color: #141D2F;
+}
+
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+    img{
+        height: 40px;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+        font-size: 23px;
+        font-weight: 400;
+        margin-left: 29px;
+        
+        &:hover{
+            color: #00BEE8 !important;
+            
+        }
+    }
+}

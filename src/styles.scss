@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+app-header{
+    background-color: #141D2F;
+    width: 100%;
+    position: fixed;
+
+}
+app-main-page{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #141D2F; 
+}
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
