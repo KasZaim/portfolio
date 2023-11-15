@@ -5,14 +5,6 @@
     display: flex;
 }
 
-.intro-pic {
-    position: absolute;
-
-    img {
-        height: 200px;
-    }
-}
-
 .content-left {
     position: relative;
     width: 45%;
@@ -21,12 +13,12 @@
 
     img {
         position: absolute;
-        height: 780px;
     }
 }
 
 .intro-pic {
-    height: 700px !important;
+    position: absolute;
+    height: 760px !important;
     padding-left: 120px;
     margin-bottom: 150px;
 }
@@ -125,8 +117,8 @@
 }
 
 .border {
-    width: 100px;
-    height: 4px;
+    width: 120px;
+    height: 5px;
     background-color: #4b47ff;
     border-radius: 10px;
 }
@@ -139,7 +131,7 @@
     margin-left: 40px;
 
     img{
-        height: 30px;
+        height: 32px;
         transition: all 150ms ease-in-out;
         cursor: pointer;
         &:hover { 
