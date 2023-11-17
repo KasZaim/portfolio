@@ -5,7 +5,10 @@
     flex-direction: column;
     color: white;
     margin-bottom: 100px;
-    overflow-x: hidden;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    
 }
 .projects-container{
     display: flex;
@@ -110,4 +113,15 @@
     width: 135px;
     background-color: transparent !important;
     border: 2px solid #00BEE7;
+}
+.background{
+    position: absolute;
+    z-index: -1;
+    bottom :70px;
+    right: -400px;
+    height: 900px;
+    img{
+        transform: rotate(70deg);
+        height: 100%;
+    }
 }

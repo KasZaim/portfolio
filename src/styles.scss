@@ -52,6 +52,7 @@ app-main-page{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     transition: 150ms ease-in-out !important;
+    width: auto;
     &:hover {
         transform: scale(1.1);
         background-color: #4B47FF !important;
