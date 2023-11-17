@@ -57,23 +57,9 @@
     justify-content: flex-end;
 }
 
-.btn-talk {
-    background-color: #00BEE7 !important;
-    width: 165px;
-    height: 58px;
-    font-size: 23px;
-    font-family: 'Poppins', sans-serif;
-    transition: 150ms ease-in-out;
-    font-weight: 400;
 
-    &:hover {
-        transform: scale(1.1);
-        background-color: #4B47FF !important;
-        font-weight: 600;
-    }
-}
 
-.btn-talk-container {
+.btn-container {
     display: flex;
     justify-content: center;
     width: 93%;

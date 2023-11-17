@@ -44,5 +44,20 @@ app-main-page{
     align-items: center;
 }
 
+.btn-talk {
+    background-color: #00BEE7 !important;
+    width: 165px;
+    height: 58px !important;
+    font-size: 23px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    transition: 150ms ease-in-out !important;
+    &:hover {
+        transform: scale(1.1);
+        background-color: #4B47FF !important;
+        font-weight: 600;
+    }
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Poppins', sans-serif !important; }
