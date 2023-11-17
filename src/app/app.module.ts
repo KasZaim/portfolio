@@ -9,13 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
+import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MainPageComponent,
     AboutMeComponent,
-    SkillsComponent
+    SkillsComponent,
+    PortfolioSectionComponent
   ],
   imports: [
     BrowserModule,
