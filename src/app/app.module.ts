@@ -10,6 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
+import { ContactSectionComponent } from './contact-section/contact-section.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { PortfolioSectionComponent } from './portfolio-section/portfolio-section
     MainPageComponent,
     AboutMeComponent,
     SkillsComponent,
-    PortfolioSectionComponent
+    PortfolioSectionComponent,
+    ContactSectionComponent
   ],
   imports: [
     BrowserModule,
