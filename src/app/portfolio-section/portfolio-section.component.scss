@@ -1,11 +1,16 @@
 .portfolio-container {
-    height: 80vh;
     background-color: #141D2F;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     color: white;
     margin-bottom: 100px;
+    overflow-x: hidden;
+}
+.projects-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
 }
 .headline-container{
 
@@ -40,4 +45,69 @@
     height: 5px;
     width: 37%;
     background-color: #4B47FF;
+}
+.single-projects{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    gap: 180px;
+    margin-bottom: 100px;
+
+    p{
+        font-size: 32px ;
+        font-weight: 700;
+        color: #4B47FF;
+    }
+}
+.projects-img{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 150ms ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.projects-description{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    span{
+        font-size: 16px;
+        max-width: 700px;
+    }
+
+    div{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 100px;
+    }
+}
+.coding-languages{
+    font-size: 23px !important;
+    color: #00BEE8;
+}
+.test-btn{
+    width: 150px;
+    height: 50px;
+    background-color: #4B47FF !important;
+    font-size: 23px;
+    font-weight: 400;
+    border-radius: 10px;
+    transition: 150ms all ease-in-out;
+    &:hover{
+        background-color: #00BEE7 !important;
+    }
+}
+.github-btn{
+    width: 135px;
+    background-color: transparent !important;
+    border: 2px solid #00BEE7;
 }
