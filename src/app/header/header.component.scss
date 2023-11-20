@@ -11,38 +11,9 @@ header {
     padding-right: 100px;
 
     img {
-        height: 130px;
+        height: 30px;
         cursor: pointer;
     }
 }
 
-.links {
-    color: white;
-    text-decoration: none;
-    font-size: 23px;
-    font-weight: 400;
-    margin-left: 29px;
-    cursor: pointer;
-    position: relative; // Für das Pseudo-Element
 
-    &::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: -5px; // Anpassung für die Position unter dem Link
-        left: 0;
-        background-color: #4B47FF;
-        transition: width 0.3s ease-in-out;
-        visibility: hidden;
-    }
-
-    &:hover {
-        color: #00BEE8 !important;
-
-        &::after {
-            visibility: visible;
-            width: 100%;
-        }
-    }
-}

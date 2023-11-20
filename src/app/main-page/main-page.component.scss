@@ -109,23 +109,6 @@
     border-radius: 10px;
 }
 
-.contacts-icon-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    margin-left: 40px;
-
-    img{
-        height: 32px;
-        transition: all 150ms ease-in-out;
-        cursor: pointer;
-        &:hover { 
-            transform: scale(1.3);
-        }
-    }
-
-}
 
 .scroll-down-text{
     position: absolute;
