@@ -29,6 +29,10 @@ h1 {
     font-weight: 700;
     margin: 0;
     font-family: 'Poppins', sans-serif !important;
+    @media (max-width:1330px) {
+        font-size: 75px;
+    }
+
 }
 
 h2{

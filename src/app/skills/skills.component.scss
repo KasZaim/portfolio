@@ -28,6 +28,19 @@
     row-gap: 50px;
     margin-top: 200px;
 
+    @media (max-width:1530px) {
+        column-gap: 100px;
+    }
+
+    @media (max-width:1380px) {
+        column-gap: 75px;
+    }
+
+    @media (max-width:1130px) {
+        max-width: 50%;
+        padding-left: 55px;
+    }
+
     img {
         height: 60px;
 
@@ -45,6 +58,11 @@
         width: 80px;
         height: 100px;
         transition: 150ms ease-in-out;
+
+        @media (max-width:1250px) {
+            width: 70px;
+            height: 90px;
+        }
     }
 
     span {
@@ -67,15 +85,28 @@
     text-align: center;
     align-items: center;
 
+    @media (max-width:1530px) {
+        right: 100px;
+    }
+    @media (max-width:1130px) {
+        right: 70px;
+        max-width: 33%;
+    }
+
+
     p {
         line-height: 108px;
         font-size: 90px;
         font-weight: 700;
         margin-bottom: 20px;
-        
+
+        @media (max-width:1330px) {
+            font-size: 75px;
+        }
+
     }
 
-    span{
+    span {
         font-size: 16px;
         margin-bottom: 40px;
     }
