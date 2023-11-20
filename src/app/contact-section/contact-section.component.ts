@@ -11,5 +11,17 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrl: './contact-section.component.scss'
 })
 export class ContactSectionComponent {
+  contactForm: FormGroup;
 
+  constructor(private fb: FormBuilder) {
+    this.contactForm = this.fb.group({
+      name: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      message: ['', Validators.required]
+    });
+  }
+
+  onSubmit() {
+    // Logik zum Senden der Nachricht
+  }
 }

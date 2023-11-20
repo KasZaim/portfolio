@@ -126,5 +126,36 @@ textarea {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 30px;
+    gap: 10px;
+    position: relative;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+  
+  input.ng-valid.ng-touched, textarea.ng-valid.ng-touched {
+    border: 1px solid green;
+  }
+  
+  /* Stil für die Fehlermeldung */
+  small {
+    color: red;
+  }
+  .error-msg{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .single-inputs{
+    width: 100%;
+    position: relative;
+    img{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    
+  }
 }

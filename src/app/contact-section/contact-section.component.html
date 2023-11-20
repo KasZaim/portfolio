@@ -1,4 +1,4 @@
-<div class="contact-section">
+<div class="contact-section" id="contact">
     <div class="background">
         <img src="./assets/img/backgrounds/shadow_footer.png" alt="">
     </div>
@@ -17,20 +17,48 @@
                 <br>
                 <br>
                 <br>
-                Need a Frontend Developer?  <b> Contact me!</b>
+                Need a Frontend Developer? <b> Contact me!</b>
             </span>
         </div>
-        <form action="" method="post">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <div class="input-box">
-                <input type="text" placeholder="Your name" required>
-                <input type="email" placeholder="Your email" required>
-                
-            </div>
-            
-            <textarea name="message" placeholder=" Your message" cols="30" rows="10" required></textarea>
+                <div class="single-inputs">
+                    <input type="text" formControlName="name" placeholder="Your name">
+                    <img *ngIf="contactForm.get('name')?.valid" src="./assets/img/correct.png" alt="Error">
+                </div>
 
-            <Button class="btn"> Send message</Button>
+                <div *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid" class="error-msg">
+                    <small>Your name is required</small>
+                </div>
+
+                <!-- Email Field -->
+                <div class="single-inputs">
+                    <input type="email" formControlName="email" placeholder="Your email">
+                    <img *ngIf="contactForm.get('email')?.valid" src="./assets/img/correct.png" alt="Error">
+                </div>
+
+
+                <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid" class="error-msg">
+                    <small>Your email is required</small>
+                    <!-- Bild eines roten Ausrufezeichens hier einfügen, falls gewünscht -->
+                </div>
+            </div>
+
+            <!-- Message Field -->
+            <div class="single-inputs">
+                <textarea formControlName="message" placeholder="Your message" cols="30" rows="10"
+                    class="error-msg"></textarea>
+                <img *ngIf="contactForm.get('message')?.valid" src="./assets/img/correct.png" style="top: 10px;" alt="Error">
+            </div>
+
+            <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
+                <small>Your message is required</small>
+                <!-- Bild eines roten Ausrufezeichens hier einfügen, falls gewünscht -->
+            </div>
+
+            <button class="btn" type="submit">Send message</button>
         </form>
+
 
     </div>
 
