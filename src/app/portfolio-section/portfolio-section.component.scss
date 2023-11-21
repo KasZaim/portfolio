@@ -62,9 +62,15 @@
     margin-bottom: 100px;
 
     p{
-        font-size: 32px ;
+        font-size: 32px !important;
         font-weight: 700;
         color: #4B47FF;
+    }
+    @media(max-width:990px){
+        gap: 100px;
+    }
+    @media(max-width:850px){
+        flex-direction: column;
     }
 }
 .projects-img{
@@ -76,12 +82,24 @@
     &:hover{
         transform: scale(1.1);
     }
+    @media(max-width:900px){
+        width: 40%;
+    }
+    @media(max-width:850px){
+        width: 100%;
+        justify-content: center !important;
+    }
 }
 .projects-description{
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    @media(max-width:900px){
+        width: 350px;
+        text-align: center;
+        align-items: center !important;
+    }
 
     span{
         font-size: 16px;
@@ -112,6 +130,9 @@
     &:hover{
         background-color: #00BEE7 !important;
     }
+    @media(max-width:900px){
+        font-size: 20px;
+    }
 }
 .github-btn{
     width: 135px;
@@ -128,4 +149,11 @@
         transform: rotate(70deg);
         height: 100%;
     }
+}
+
+.d-column-reverse{
+    flex-direction: column-reverse;
+}
+.al-items-end{
+    align-items: flex-end;
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio-section',
@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class PortfolioSectionComponent {
 
+  isSmallScreen: boolean = false;
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.isSmallScreen = window.innerWidth <= 850;
+  }
+
+  constructor() {
+    this.isSmallScreen = window.innerWidth <= 850;
+  }
 }

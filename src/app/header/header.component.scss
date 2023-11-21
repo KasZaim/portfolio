@@ -9,10 +9,20 @@ header {
     height: 110px;
     padding-left: 100px;
     padding-right: 100px;
+    
+    @media (max-width:950px) {
+        padding-right: 10px;
+    }
 
     img {
         height: 30px;
         cursor: pointer;
+    }
+}
+
+.nav-bar-Desktop{
+    @media (max-width:770px){
+        display: none;
     }
 }
 

@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainContentComponent } from './main-content/main-content.component';
+import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MainContentComponent } from './main-content/main-content.component';
     ContactSectionComponent,
     FooterComponent,
     ImprintComponent,
-    MainContentComponent
+    MainContentComponent,
+    MobileMenuComponent
   ],
   imports: [
     BrowserModule,

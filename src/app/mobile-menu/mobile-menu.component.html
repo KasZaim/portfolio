@@ -1,0 +1,9 @@
+<img class="menu-bars" [src]="currentImage" (mouseover)="currentImage = hoverImage"
+    (mouseout)="currentImage = normalImage" (click)="toggleMenu()" alt="">
+
+    <div class="mobile-menu" *ngIf="isMenuOpen" data-aos="fade-down-left">
+        <a class="links" (click)="toggleMenu()" href="/#about-me">About me</a>
+        <a class="links" (click)="toggleMenu()" href="/#skills">Skills</a>
+        <a class="links" (click)="toggleMenu()" href="/#portfolio">Portfolio</a>
+        <a class="links" (click)="toggleMenu()" href="/#contact">Contact</a>
+    </div>

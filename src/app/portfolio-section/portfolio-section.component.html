@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div class="single-projects" data-aos="fade-right" data-aos-duration="2000">
+        <div class="single-projects" [class.d-column-reverse]="isSmallScreen" data-aos="fade-right" data-aos-duration="2000">
             <div class="projects-description" style="align-items: flex-end;">
                 <p>El-Pollo-Loco</p>
                 <span class="coding-languages">JavaScript | HTML | CSS</span>
@@ -35,20 +35,21 @@
             </div>
             <div class="projects-img" style="justify-content: flex-start;">
                 <img src="./assets/img/el-pollo-loco.png" alt="">
-            </div>
-            
+            </div>    
         </div>
 
         <div class="background">
             <img src="./assets/img/backgrounds/shadow_fifth_project.png" alt="">
         </div>
+
+
         <div class="single-projects" data-aos="fade-left" data-aos-duration="2000" style="margin-bottom: 0;">
             <div class="projects-img">
                 <img src="./assets/img/ringoffire.png" alt="">
             </div>
             <div class="projects-description">
                 <p>Ring of Fire</p>
-                <span class="coding-languages">Angular | Typescript | Firebase | SCSS</span>
+                <span class="coding-languages">Angular | Typescript | Firebase</span>
                 <span>Ring of Fire is a digital version of the classic card drinking game, developed as an interactive web application using Angular. This project blends traditional gameplay with modern technology to provide a seamless and engaging user experience.</span>
                 <div>
                     <a class="test-btn" mat-raised-button href="wwww.google.de">Live test</a>
