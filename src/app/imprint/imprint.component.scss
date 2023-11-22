@@ -6,10 +6,20 @@
     color: white;
     display: flex;
     justify-content: center;
-
+    
+    img{
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        z-index: 10;
+        cursor: pointer;
+    }
 }
 
 .overdiv{
+    position: relative;
     font-family: Poppins;
     background-color: #141d2f;
     min-height: 100vh;
@@ -22,4 +32,8 @@
     padding-top: 20px;
     text-align: center;
     overflow: auto;
+}
+
+p{
+    font-size: unset !important;
 }

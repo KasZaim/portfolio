@@ -3,6 +3,12 @@
     background-color: #141D2F;
     max-width: 100%;
     display: flex;
+    @media (max-width:600px) {
+        height: 90vh;
+    }
+    @media (max-width:440px) {
+        height: 100vh;
+    }
 }
 
 .background {
@@ -45,11 +51,17 @@
             font-size: 75px;
             margin-bottom: 40px;
         }
+        @media (max-width:440px) {
+            margin-bottom: 0px;
+        }
     }
 
     span {
         font-size: 16px;
         font-weight: 400;
+        @media(max-width: 440px) {
+            font-size: 15px;
+        }
     }
 }
 

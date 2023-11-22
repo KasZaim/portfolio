@@ -58,6 +58,9 @@ app-main-page{
         background-color: #4B47FF !important;
         font-weight: 600;
     }
+    @media (max-width:510px) {
+        font-size: 19px;
+    }
 }
 .links {
     color: white;
