@@ -23,6 +23,9 @@
         position: absolute;
         z-index: 5;
     }
+    @media(max-width:400px){
+        height: 40vh;
+    }
 }
 
 .footer-img-container{

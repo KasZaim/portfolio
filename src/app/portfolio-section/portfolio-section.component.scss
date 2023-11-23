@@ -98,6 +98,9 @@
     @media(max-width:850px) {
         flex-direction: column;
     }
+    @media(max-width:400px) {
+        width: 98%;
+    }
 }
 
 .projects-img {
@@ -187,6 +190,9 @@
     img {
         transform: rotate(70deg);
         height: 100%;
+    }
+    @media(max-width: 400px){
+        right: -500px;
     }
 }
 

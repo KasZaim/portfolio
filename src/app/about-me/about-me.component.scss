@@ -9,6 +9,9 @@
     @media (max-width:440px) {
         height: 100vh;
     }
+    @media (max-width:400px) {
+        height: 120vh;
+    }
 }
 
 .background {
@@ -61,6 +64,9 @@
         font-weight: 400;
         @media(max-width: 440px) {
             font-size: 15px;
+        }
+        @media(max-width: 400px) {
+            font-size: 14px;
         }
     }
 }
