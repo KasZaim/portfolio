@@ -28,7 +28,7 @@
         height: 900px;
     }
     @media(max-width: 1000px){
-        left: -370px;
+        left: -388px;
         bottom: -200px;
     }
 }
@@ -164,6 +164,9 @@ form {
     }
     
     
+}
+.btn-disabled{
+    background-color: gray !important;
 }
 
 input,textarea {

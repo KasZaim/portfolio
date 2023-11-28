@@ -20,10 +20,10 @@
                 Need a Frontend Developer? <b> Contact me!</b>
             </span>
         </div>
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <form [formGroup]="contactForm" (ngSubmit)="sendMail()">
             <div class="input-box">
                 <div class="single-inputs">
-                    <input type="text" formControlName="name" placeholder="Your name">
+                    <input type="text" formControlName="name" name="name" placeholder="Your name">
                     <img *ngIf="contactForm.get('name')?.valid" src="./assets/img/correct.png" alt="Error">
                 </div>
 
@@ -56,7 +56,7 @@
                 <!-- Bild eines roten Ausrufezeichens hier einfügen, falls gewünscht -->
             </div>
 
-            <button class="btn" type="submit">Send message</button>
+            <button [ngClass]="{'btn-disabled': !contactForm.valid}" [disabled]="isSubmitted" class="btn" type="submit">Send message</button>
         </form>
 
 

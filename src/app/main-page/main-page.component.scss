@@ -55,6 +55,9 @@
     @media (max-width:380px) {
         height: 380px !important;
     }
+    @media (max-width:330px) {
+        width: 110%;
+    }
 }
 
 .background {
