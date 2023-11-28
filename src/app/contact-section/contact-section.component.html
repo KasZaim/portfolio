@@ -20,7 +20,8 @@
                 Need a Frontend Developer? <b> Contact me!</b>
             </span>
         </div>
-        <form [formGroup]="contactForm" (ngSubmit)="sendMail()">
+        
+        <form [formGroup]="contactForm" *ngIf="!isSubmitted" (ngSubmit)="sendMail()">
             <div class="input-box">
                 <div class="single-inputs">
                     <input type="text" formControlName="name" name="name" placeholder="Your name">
@@ -46,16 +47,17 @@
 
             <!-- Message Field -->
             <div class="single-inputs">
+                <mat-spinner *ngIf="isLoading"></mat-spinner>
                 <textarea formControlName="message" placeholder="Your message" cols="30" rows="10"
                     class="error-msg"></textarea>
-                <img *ngIf="contactForm.get('message')?.valid" src="./assets/img/correct.png" style="top: 10px;" alt="Error">
+                <img *ngIf="contactForm.get('message')?.valid && !isLoading" src="./assets/img/correct.png" style="top: 10px;" alt="Error">
             </div>
-
+            
             <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
                 <small>Your message is required</small>
                 <!-- Bild eines roten Ausrufezeichens hier einfügen, falls gewünscht -->
             </div>
-
+            
             <button [ngClass]="{'btn-disabled': !contactForm.valid}" [disabled]="isSubmitted" class="btn" type="submit">Send message</button>
         </form>
 

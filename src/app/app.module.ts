@@ -18,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ImprintComponent } from './imprint/imprint.component';
 import { MainContentComponent } from './main-content/main-content.component';
 import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     FooterComponent,
     ImprintComponent,
     MainContentComponent,
-    MobileMenuComponent
+    MobileMenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,7 +42,8 @@ import { MobileMenuComponent } from './mobile-menu/mobile-menu.component';
     FormsModule,
     MatFormFieldModule, 
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatProgressSpinnerModule
 
   ],
   providers: [],
