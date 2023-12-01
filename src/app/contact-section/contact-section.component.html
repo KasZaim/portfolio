@@ -61,6 +61,10 @@
             <button [ngClass]="{'btn-disabled': !contactForm.valid}" [disabled]="isSubmitted" class="btn" type="submit">Send message</button>
         </form>
 
+        <div *ngIf="isSubmitted" class="mail-success" data-aos="fade-up">
+            <h2>Your message has been sent successfully</h2>
+            <img src="./assets/img/mail-success.png" alt="">
+        </div>
 
     </div>
 

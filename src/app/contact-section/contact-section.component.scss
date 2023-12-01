@@ -254,3 +254,15 @@ mat-spinner{
     height: 40px !important;
     width: 40px !important; 
 }
+.mail-success{
+    text-align: center;
+    height: 100%;
+    img{
+        height: 30%;
+        width: 40%;
+        object-fit: contain;
+    }
+    h2{
+        margin: 0;
+    }
+}

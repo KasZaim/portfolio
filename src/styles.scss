@@ -23,6 +23,10 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+app-main-content{
+    width: 100% ;
+    max-width: 100%;
+}
 app-header{
     background-color: #141D2F;
     width: 100%;
@@ -35,6 +39,7 @@ app-main-page{
     display: flex;
     flex-direction: column;
     background-color: #141D2F; 
+    position: relative;
 }
 app-mobile-menu{
     display: none;
@@ -121,6 +126,9 @@ app-mobile-menu{
 p{
     @media(max-width:840px){
         font-size: 56px !important;
+    }
+    @media(max-width:400px){
+        font-size: 52px !important;
     }
 }
 

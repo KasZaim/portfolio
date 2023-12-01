@@ -262,7 +262,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    bottom: 50px;
+    bottom: 0px;
     z-index: 2;
 
     span {
@@ -273,9 +273,10 @@
 
         @media(max-width:1070px) {
             display: none;
+            
         }
     }
-    @media(max-width: 400px) {
+    @media(max-width: 1080px) {
         bottom: 15px;
     }
 }
