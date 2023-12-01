@@ -1,12 +1,11 @@
 .skills-container {
     display: flex;
-    height: 80vh;
+    height: 100vh;
     background-color: #141D2F;
     max-width: 100%;
     @media (max-width:840px) {
         flex-direction: column;
         position: relative;
-        height: 100vh;
     }
     @media(max-width:400px) {
         

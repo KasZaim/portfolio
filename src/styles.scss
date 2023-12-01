@@ -65,6 +65,7 @@ app-mobile-menu{
     font-weight: 400;
     transition: 150ms ease-in-out !important;
     width: auto;
+    border-radius: 10px !important;
     &:hover {
         transform: scale(1.1);
         background-color: #4B47FF !important;
