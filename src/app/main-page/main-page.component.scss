@@ -1,24 +1,27 @@
 .introduction {
     background-color: #141D2F;
     width: 100%;
-    height: 80vh;
+    max-width: 100%;
     display: flex;
+    padding-top: 100px;
+    height: 100vh;
 
     @media (max-width:1070px) {
         flex-direction: column;
         align-items: center;
+        padding-top: 0;
     }
 
 }
 
 .content-left {
     position: relative;
-    width: 45%;
-    height: 100%;
-    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    @media (max-width:1550px) {
-        margin-left: -100px;
+    @media (max-width:1750px) {
+        padding-top: 160px;
     }
 
     @media (max-width:1490px) {
@@ -27,36 +30,62 @@
 
     @media (max-width:1070px) {
         margin-left: 0;
-        width: 90%;
-        margin-top: 100px;
+        width: 100%;
+        padding-top: 100px;
         display: flex;
         justify-content: center;
         align-items: flex-start;
     }
+    @media (max-width:400px){
+        padding-top: 70px;
+    }
 
-    img {
-        position: absolute;
+}
+
+.background-shadow {
+    max-width: 100%;
+    @media (max-width:1070px) {
+        margin-left: 0;
+        bottom: 0;
+        height: 110%;
+        object-fit: cover;
     }
 }
 
 .intro-pic {
     position: absolute;
     height: 760px !important;
-    padding-left: 120px;
+    // padding-left: 120px;
     margin-bottom: 150px;
+    // left: 0;
+    object-fit: cover;
+    max-width: 100%;
 
+    @media (max-width:1350px) {
+        height: 727px !important;
+    }
+    @media (max-width:1270px) {
+        height: 670px !important;
+        // padding-left: 100px;
+    }
     @media (max-width:1070px) {
         height: 500px !important;
-        padding-left: 0px;
+        // padding-left: 0px;
     }
+
     @media (max-width:440px) {
         height: 425px !important;
+        margin-top: 25px;
     }
+
     @media (max-width:380px) {
-        height: 380px !important;
+        height: 375px !important;
+        margin-top: 55px;
+        padding-right: 0px;
     }
+
     @media (max-width:330px) {
-        width: 110%;
+        max-width: 100%;
     }
 }
 
@@ -65,7 +94,7 @@
     z-index: 1;
     right: 0;
     width: 100vw;
-
+    top: 0;
     @media (max-width:1555px) {
         top: 50px;
     }
@@ -74,35 +103,28 @@
         top: 100px;
     }
 
-    @media (max-width:1360px) {
-        top: 200px;
-    }
-
     @media (max-width:1070px) {
-        top: 30px;
+        top: -20px;
     }
 
     @media (max-width:950px) {
-        top: 90px;
+        top: 0px;
     }
 
-    @media (max-width:900px) {
+    @media (max-width:800px) {
+        top: 25px;
+    }
+
+    @media (max-width:650px) {
+        top: 70px;
+    }
+
+    @media (max-width:510px) {
         top: 100px;
     }
-    @media (max-width:790px) {
-        top: 130px;
-    }
-    @media (max-width:650px) {
-        top: 170px;
-    }
-    @media (max-width:510px) {
-        top: 192px;
-    }
+
     @media (max-width:440px) {
-        top: 172px;
-    }
-    @media (max-width:440px) {
-        top: 116px;
+        top: 90px;
     }
 
     img {
@@ -113,9 +135,8 @@
 
 .content-right {
     position: relative;
-    margin-top: 150px;
     font-family: 'Poppins', sans-serif;
-    margin-left: -50px;
+    margin-left: -34px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -124,40 +145,26 @@
     z-index: 2;
     gap: 40px;
 
-    @media (max-width:1490px) {
-        margin-left: 30px;
-    }
-
-    @media (max-width:1350px) {
-        margin-left: 100px;
-    }
-
-    @media (max-width:1350px) {
-        margin-left: 0px;
-    }
-
     @media (max-width:1070px) {
         align-items: center;
         gap: 0;
-        bottom: -50px;
-        width: 100%;
+        max-width: 100%;
+        bottom: 100px;
     }
+    @media (max-width:440px) {
+        bottom: 118px;
+    }
+    @media (max-width:400px) {
+        margin-top: -80px;
+        bottom: 20px;
+    }
+}
 
-    @media(max-width: 950px) {
-        bottom: -60px;
+.background-shadow{
+    @media (max-width:1070px) {
+        max-width: 100%;
+        height: 500px;
     }
-    @media(max-width: 510px) {
-        margin-right: 40px;
-        height: inherit;
-    }
-    @media(max-width: 440px) {
-        margin-top: 75px;
-    }
-    @media(max-width: 440px) {
-        margin-top: 182px;
-    }
-
-
 }
 
 .headline-rotated {
@@ -178,9 +185,11 @@
     @media (max-width:950px) {
         font-size: 35px !important;
     }
+
     @media (max-width:600px) {
         font-size: 32px !important;
     }
+
     @media (max-width:400px) {
         font-size: 24px !important;
         padding-left: 36px;
@@ -194,10 +203,11 @@
     display: flex;
     justify-content: center;
     width: 100%;
+
     @media (max-width:510px) {
         margin-left: 30px;
     }
-    
+
 }
 
 .headline-box {
@@ -224,9 +234,11 @@
         @media (max-width:950px) {
             font-size: 54px;
         }
+
         @media (max-width:600px) {
             font-size: 40px;
         }
+
         @media (max-width:400px) {
             font-size: 33px;
         }
@@ -247,12 +259,15 @@
             font-size: 36px !important;
             margin-top: -10px;
         }
+
         @media (max-width:600px) {
             font-size: 31px !important;
         }
+
         @media (max-width:510px) {
             font-size: 28px !important;
         }
+
         @media (max-width:400px) {
             font-size: 23px !important;
             line-height: 60px;
@@ -261,12 +276,12 @@
 }
 
 .cotacts-links-box {
-    position: absolute;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-start;
     bottom: 0px;
     z-index: 2;
+    margin-top: -160px;
 
     span {
         margin-left: 40px;
@@ -276,11 +291,16 @@
 
         @media(max-width:1070px) {
             display: none;
-            
+
         }
     }
-    @media(max-width: 1080px) {
-        bottom: 15px;
+
+    @media(max-width: 1070px) {
+        padding-top: 110px;
+        padding-bottom: 50px;
+    }
+    @media(max-width: 440px) {
+        padding-top: 100px;
     }
 }
 
@@ -289,6 +309,7 @@
     height: 5px;
     background-color: #4b47ff;
     border-radius: 10px;
+
     @media(max-width: 400px) {
         width: 60px;
     }
@@ -305,16 +326,19 @@
     animation: bounce 2s infinite;
 
     @media (max-width:400px) {
-        top: 80% ;
+        top: 80%;
         bottom: unset;
     }
+
     span {
         color: white;
         font-size: 23px;
         margin-right: 10px;
+
         @media (max-width:850px) {
             font-size: 18px;
         }
+
         @media (max-width:400px) {
             font-size: 12px;
         }

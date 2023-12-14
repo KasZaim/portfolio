@@ -3,19 +3,26 @@
         <img src="./assets/img/backgrounds/background-skills.png" alt="">
     </div>
 
-    <div class="skills-icons-container" data-aos="zoom-in-up" data-aos-duration="1500">
-        <div *ngFor="let skill of skills">
-            <img [src]="skill.image" alt="{{ skill.name }}">
-            <span>{{ skill.name }}</span>
+    <div class="skills-content">
+        <div class="my-skills-btn-box">
+            <div class="skills-headline">
+                <p>My skills</p>
+                <div class="border"></div>
+            </div>
+            <span>In my studies, I significantly advanced my frontend development skills, mastering various technologies
+                and
+                languages, and bringing exciting projects to life.</span>
+
+            <a href="/#contact" class="btn" mat-raised-button>Get in touch</a>
+            
+        </div>
+        <div class="skills-icons-container" data-aos="zoom-in-up" data-aos-duration="1500">
+            <div *ngFor="let skill of skills">
+                <img [src]="skill.image" alt="{{ skill.name }}">
+                <span>{{ skill.name }}</span>
+            </div>
         </div>
     </div>
 
-    <div class="my-skills-btn-box">
-        <p>My skills</p>
-        <span>In my studies, I significantly advanced my frontend development skills, mastering various technologies and
-            languages, and bringing exciting projects to life.</span>
 
-        <a href="/#contact" class="btn" mat-raised-button>Get in touch</a>
-        <div class="border"></div>
-    </div>
 </div>

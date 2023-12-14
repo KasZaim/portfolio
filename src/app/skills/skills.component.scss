@@ -1,39 +1,51 @@
 .skills-container {
     display: flex;
-    height: 100vh;
     background-color: #141D2F;
     max-width: 100%;
-    @media (max-width:840px) {
-        flex-direction: column;
-        position: relative;
-    }
-    @media(max-width:400px) {
-        
-    }
+    justify-content: space-around;
+    align-items: center;
 }
 
 .background {
     position: absolute;
     left: -338px;
-    z-index: 0;
+    z-index: 2;
 
     img {
         width: 100%;
         height: 100%;
 
     }
+    @media (max-width:840px) {
+        z-index: 0;
+    }
+}
+.skills-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @media (max-width:840px) {
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.skills-headline{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: -19px;
+    gap: 10px;
+
 }
 
 .skills-icons-container {
-    position: absolute;
-    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     column-gap: 110px;
     max-width: 45%;
-    padding-left: 100px;
     row-gap: 50px;
-    margin-top: 200px;
 
     @media (max-width:1530px) {
         column-gap: 100px;
@@ -53,14 +65,14 @@
         column-gap: 100px;
         justify-content: center;
         align-items: center;
-        margin-top: 280px;
+        margin-top: 100px;
     }
     @media (max-width:400px){
-        row-gap: 65px;
+        row-gap: 100px;
         column-gap: 80px;
     }
     @media (max-width:355px){
-        column-gap: 65px;
+        column-gap: 60px;
     }
 
     
@@ -115,9 +127,7 @@
 }
 
 .my-skills-btn-box {
-    margin-top: 180px;
     display: flex;
-    position: absolute;
     flex-direction: column;
     z-index: 2;
     right: 210px;
@@ -125,24 +135,12 @@
     color: white;
     text-align: center;
     align-items: center;
-
-    @media (max-width:1530px) {
-        right: 100px;
-    }
-    @media (max-width:1130px) {
-        right: 70px;
-        max-width: 40%;
-    }
-    @media (max-width:1070px) {
-        right: 20px;
-    }
     @media (max-width:840px) {
-        right: 62px;
-        top: -120px;
-        max-width: 80%;
-        margin-top: 0;
+        max-width: 100%;
+        margin-top: 100px;
         text-align: end;
         align-items: flex-end;
+        padding-right: 20px;
     }
 
     p {
@@ -169,12 +167,9 @@
 .border{
     height: 5px ;
     background-color: #4b47ff;
-    position: absolute;
     width: 44px;
-    right: -62px;
-    top: 55px;
     display: none;
-    @media(max-width: 840px){
+    @media (max-width:840px) {
         display: unset;
     }
 }

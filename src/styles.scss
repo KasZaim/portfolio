@@ -26,6 +26,8 @@ body{
 app-main-content{
     width: 100% ;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 app-header{
     background-color: #141D2F;
@@ -35,11 +37,9 @@ app-header{
 
 }
 app-main-page{
-    height: 100vh;
+    background-color: #141D2F; 
     display: flex;
     flex-direction: column;
-    background-color: #141D2F; 
-    position: relative;
 }
 app-mobile-menu{
     display: none;
