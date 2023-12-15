@@ -14,7 +14,6 @@ export class ContactSectionComponent {
   contactForm: FormGroup;
   isSubmitted = false;
   isLoading = false;
-
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
@@ -52,7 +51,7 @@ export class ContactSectionComponent {
         setTimeout(() => {
           this.isLoading = false;
           this.isSubmitted = true; // Beenden der Ladeanimation nach 1 Sekunde
-        }, 3000); 
+        }, 1500); 
       }
     }
   }
