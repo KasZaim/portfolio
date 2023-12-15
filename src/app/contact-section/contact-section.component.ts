@@ -21,11 +21,14 @@ export class ContactSectionComponent {
       message: ['', Validators.required]
     });
   }
+  resetSubmit() {
+    this.isSubmitted = false;
+    this.contactForm.reset();
+}
 
   async sendMail() {
     if (this.contactForm.valid) {
       this.isLoading = true; 
-      this.contactForm.disable();
 
       try {
         const formData = new FormData();

@@ -40,14 +40,13 @@
 
 
                 <div class="error-msg">
-                    <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+                    <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid && !contactForm.get('email')?.value">
                         Your email is required
                     </small>
-                    <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.value">
+                    <small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.value && contactForm.get('email')?.invalid">
                         Your email address must be valid
                     </small>
                 </div>
-
             </div>
 
             <!-- Message Field -->
@@ -71,6 +70,7 @@
         <div *ngIf="isSubmitted" class="mail-success" data-aos="fade-up">
             <h2>Your message has been sent successfully</h2>
             <img src="./assets/img/mail-success.png" alt="">
+            <button *ngIf="isSubmitted" class="btn" (click)="resetSubmit()" >Send New Message</button>
         </div>
 
     </div>

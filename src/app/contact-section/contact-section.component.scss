@@ -182,7 +182,6 @@ input,textarea {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif !important;
-    cursor: pointer;
 
     &:hover{
         border: 1px solid #00BEE8;
@@ -258,7 +257,12 @@ mat-spinner{
 }
 .mail-success{
     text-align: center;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
     img{
         height: 30%;
         width: 40%;
@@ -266,5 +270,9 @@ mat-spinner{
     }
     h2{
         margin: 0;
+    }
+    button{
+        width: 30%;
+        cursor: pointer;
     }
 }
