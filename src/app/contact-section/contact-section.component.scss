@@ -163,6 +163,7 @@ form {
         padding-left: 0px;
         padding-right: 0;
         padding-bottom: 55px;
+        margin-top: 30px;
     }
     
     
@@ -262,17 +263,33 @@ mat-spinner{
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
+    
+    @media (max-width:1000px) {
+        margin-top: 20px;
+    }
 
     img{
         height: 30%;
         width: 40%;
         object-fit: contain;
+
+        @media (max-width:1000px) {
+            width: 30%;
+        }
     }
     h2{
         margin: 0;
+        @media (max-width:1000px) {
+            font-size: 2em;
+        }
+        @media (max-width:500px) {
+            font-size: 1.5em;
+        }
     }
     button{
-        width: 30%;
+        width: 220px;
         cursor: pointer;
+        font-size: 18px;
+        font-weight: 600;
     }
 }
