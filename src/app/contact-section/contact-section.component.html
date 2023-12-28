@@ -3,13 +3,13 @@
         <img src="./assets/img/backgrounds/shadow_footer.png" alt="">
     </div>
 
-    <div class="headline-contact">
+    <div class="headline-contact" *ngIf="!isSubmitted">
         <div class="border"></div>
         <h1>Contact</h1>
     </div>
 
     <div class="contact-content">
-        <div class="contact-left-content">
+        <div class="contact-left-content" *ngIf="!isSubmitted">
             <h2>Got a problem to solve?</h2>
             <span>
                 Contact me through this form. I am interested in hearing you, knowing your ideas and contributing to
