@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class SkillsComponent {
   skills = [
     { name: 'Angular', image: './assets/img/icons/angular.png' },
-    { name: 'Typescript', image: './assets/img/icons/typescript.png' },
-    { name: 'Javascript', image: './assets/img/icons/javascript.png' },
+    { name: 'TypeScript', image: './assets/img/icons/typescript.png' },
+    { name: 'JavaScript', image: './assets/img/icons/javascript.png' },
     { name: 'HTML', image: './assets/img/icons/html.png' },
     { name: 'Firebase', image: './assets/img/icons/firebase.png' },
     { name: 'GIT', image: './assets/img/icons/git.png' },
